@@ -1,0 +1,71 @@
+<SalesOrders xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="SORTOIDOC.XSD">
+    <Orders>
+        <OrderHeader>
+            <OrderActionType>A</OrderActionType>
+            <Customer>123456</Customer>
+            <OrderDate>2021-03-24</OrderDate>
+            <InvoiceTerms>27</InvoiceTerms>
+            <Currency>$</Currency>
+            <ShippingInstrs>Service Option: UPS Ground. Shipping Account: Will</ShippingInstrs>
+            <CustomerName>Imagination Media</CustomerName>
+            <ShipAddress1>1515 S Federal Hwy</ShipAddress1>
+            <ShipAddress2>Suite 304</ShipAddress2>
+            <ShipAddress3>Boca Raont</ShipAddress3>
+            <ShipAddress4>FL</ShipAddress4>
+            <ShipPostalCode>33432</ShipPostalCode>
+            <Email>test@imaginationmedia.com</Email>
+        </OrderHeader>
+        <OrderDetails>
+            <StockLine>
+                <CustomerPoLine>1</CustomerPoLine>
+                <StockCode>123</StockCode>
+                <Warehouse>TX</Warehouse>
+                <OrderQty>1</OrderQty>
+                <OrderUom>DZ</OrderUom>
+                <Price>34.95</Price>
+                <PriceUom>DZ</PriceUom>
+                <PriceCode>TEST</PriceCode>
+                <AlwaysUsePriceEntered>Y</AlwaysUsePriceEntered>
+                <AlwaysUseDiscountEntered>N</AlwaysUseDiscountEntered>
+                <CustRequestDate>2021-03-24</CustRequestDate>
+            </StockLine>
+            <StockLine>
+                <CustomerPoLine>2</CustomerPoLine>
+                <StockCode>1234</StockCode>
+                <Warehouse>TX</Warehouse>
+                <OrderQty>1</OrderQty>
+                <OrderUom>DZ</OrderUom>
+                <Price>34.95</Price>
+                <PriceUom>DZ</PriceUom>
+                <PriceCode>TEST</PriceCode>
+                <AlwaysUsePriceEntered>Y</AlwaysUsePriceEntered>
+                <AlwaysUseDiscountEntered>N</AlwaysUseDiscountEntered>
+                <CustRequestDate>2021-03-24</CustRequestDate>
+            </StockLine>
+            <StockLine>
+                <CustomerPoLine>3</CustomerPoLine>
+                <StockCode>12345</StockCode>
+                <Warehouse>TX</Warehouse>
+                <OrderQty>12</OrderQty>
+                <OrderUom>PR</OrderUom>
+                <Price>5.00</Price>
+                <PriceUom>PR</PriceUom>
+                <PriceCode>TEST</PriceCode>
+                <AlwaysUsePriceEntered>Y</AlwaysUsePriceEntered>
+                <AlwaysUseDiscountEntered>N</AlwaysUseDiscountEntered>
+                <CustRequestDate>2021-03-24</CustRequestDate>
+            </StockLine>
+            <CommentLine>
+                <CustomerPoLine>4</CustomerPoLine>
+                <LineActionType>A</LineActionType>
+                <Comment>If possible, please call when order is ready or estimated time and I will pick up this afternoon.</Comment>
+            </CommentLine>
+            <FreightLine>
+                <CustomerPoLine>5</CustomerPoLine>
+                <LineActionType>A</LineActionType>
+                <FreightValue>0.00</FreightValue>
+                <FreightCost>0.00</FreightCost>
+            </FreightLine>
+        </OrderDetails>
+    </Orders>
+</SalesOrders>

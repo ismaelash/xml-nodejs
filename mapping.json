@@ -1,0 +1,62 @@
+[
+  {
+    "origin": "extension_attributes.syspro_id",
+    "target": "Customer",
+    "static_value" : "",
+    "convert_function": ""
+  },
+  {
+    "origin": "created_at",
+    "target": "OrderDate",
+    "static_value" : "",
+    "convert_function": "Y-m-dd"
+  },
+  {
+    "origin": "extension_attributes.company_order_attributes.company_name",
+    "target": "CustomerName",
+    "static_value" : "",
+    "convert_function": "Maximum of 40 characters"
+  },
+  {
+    "origin": "billing_address.street.0",
+    "target": "ShipAddress1",
+    "static_value" : "",
+    "convert_function": "Maximum of 40 characters"
+  },
+  {
+    "origin": "billing_address.street.1",
+    "target": "ShipAddress2",
+    "static_value" : "",
+    "convert_function": "Leave field empty if there's no second line on the street"
+  },
+  {
+    "origin": "billing_address.city",
+    "target": "ShipAddress3",
+    "static_value" : "",
+    "convert_function": ""
+  },
+  {
+    "origin": "billing_address.region_code",
+    "target": "ShipAddress4",
+    "static_value" : "",
+    "convert_function": ""
+  },
+  {
+    "origin": "billing_address.postcode",
+    "target": "ShipPostalCode",
+    "static_value" : "",
+    "convert_function": ""
+  },
+  {
+    "origin": "extension_attributes.bold_order_comment",
+    "target": "CommentLine.CustomerPoLine",
+    "static_value" : "",
+    "convert_function": "It's an incremental number - Add CommentLine only if the extension_attributes.bold_order_comment is not empty"
+  },
+  {
+    "origin": "shipping_amount",
+    "target": "FreightLine.FreightValue",
+    "static_value" : "",
+    "convert_function": ""
+  }
+]
